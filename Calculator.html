@@ -1,0 +1,40 @@
+                                                                                                                                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let first_number = parseInt(prompt("Enter your First Number"))
+        let second_number = parseInt(prompt("Enter your second Number"))
+        let operator = prompt("Select any one operator (+,-,*,or/)")
+        switch (operator){
+            case "+" :
+                let add = first_number + second_number
+                document.write("Addition : "+ add)
+                break;
+                case "-" :  
+                let sub = first_number - second_number
+                document.write("Subtraction : " + sub)
+                break;
+                case "*" :
+                document.write("Multiplication : " + first_number * second_number )  
+                break;
+                case "/":
+                document.write("Divide : " + first_number/second_number )
+                break;
+                if(first_number ==0,second_number ==0){
+                        document.write("Result is undefined")
+                    }
+                    else{
+                        document.write("Divide : "+ first_number / second_number)
+                    }
+                break;                        
+            default:
+                document.write("Invalid Operator")
+        }
+    </script>
+</body>
+</html>
